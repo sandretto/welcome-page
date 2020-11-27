@@ -1,0 +1,149 @@
+body
+    box-sizing: border-box
+    display: flex
+    margin: 0
+.container
+    width: 1440px
+    height: 1024px
+    font-family: 'Montserrat', sans-serif
+    background-color: $basic
+.welcome-page
+    width: 1253px
+    height: 824px
+    margin-left: 94px
+    margin-top: 99px
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    mix-blend-mode: normal
+    border-radius: 43px
+    background: $horizontal-gradient
+.header
+    display: flex
+    align-items: center
+    width: 659px
+    color: $light
+    &__name
+        margin: 0
+        position: absolute
+        left: 76px
+        top: 444px
+        font-size: 52px
+    &__description
+        position: absolute
+        left: 81px
+        top: 532px
+.frame
+    &__high
+        position: absolute
+        top: 0
+        left: 659px
+        display: flex
+        flex-direction: column
+        width: 594px
+        height: 827px
+        border-radius: 41px
+        background-color: $light
+        opacity: 0.48
+        z-index: 2
+    &__low
+        position: absolute
+        left: 659px
+        display: flex
+        flex-direction: column
+        width: 594px
+        height: 789px
+        border-radius: 41px
+        background-color: $light
+        opacity: 0.73
+        z-index: 3
+.login
+    position: absolute
+    left: 659px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 594px
+    height: 743px
+    border-radius: 41px
+    background-color: $light
+    z-index: 4
+    &__name
+        color: $text-color-dark
+        margin-bottom: 22px
+        font-size: 52px
+        font-style: normal
+        font-weight: 700
+        line-height: 63px
+        letter-spacing: 0.4727272093296051px
+        text-align: center
+    &__description
+        margin-bottom: 50px
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.3999998867511749px
+        text-align: center
+        color: #808080
+    &-form
+        display: flex
+        flex-direction: column
+        &__input
+            box-sizing: border-box
+            outline: none
+            border-radius: 42.5px
+            height: 55px
+            width: 451px
+            margin-bottom: 22px
+            color: #A0A0A0
+            background: #F0F0F0
+            border: 1px solid #FFFFFF
+            text-align: center
+        &__description
+            margin-top: 31px
+            margin-bottom: 31px
+            font-size: 13px
+            font-style: normal
+            font-weight: 400
+            line-height: 16px
+            letter-spacing: 0.5318182110786438px
+            text-align: center
+            color: #8B8B8B
+        &__button
+            height: 55px
+            width: 449px
+            margin-top: 9px
+            border-radius: 27.5px
+            border: 0
+            text-align: center
+            color: #FFFFFF
+            &--continue
+                font-size: 14px
+                font-style: normal
+                font-weight: 500
+                line-height: 17px
+                letter-spacing: 1.2999999523162842px
+                text-align: center
+                background: $vertical-gradient
+            &--twitter
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 17px
+                letter-spacing: 0.9999998807907104px
+                text-align: left
+                margin-bottom: 22px
+                background: $gradient-light
+            &--facebook
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 17px
+                letter-spacing: 0.9999998807907104px
+                text-align: left
+                background: $gradient-dark
+            
+
