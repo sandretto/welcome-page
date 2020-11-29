@@ -33,8 +33,9 @@ body {
           align-items: flex-end;
   mix-blend-mode: normal;
   border-radius: 43px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1.75%, #6ED4FF), color-stop(95.51%, #8FFFA3));
-  background: linear-gradient(360deg, #6ED4FF 1.75%, #8FFFA3 95.51%);
+  background-size: 1253px 824px;
+  background: url("../img/container.svg");
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -195,6 +196,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 39px;
 }
 
