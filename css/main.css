@@ -33,9 +33,17 @@ body {
           align-items: flex-end;
   mix-blend-mode: normal;
   border-radius: 43px;
-  background-size: 1253px 824px;
+  background-size: 100% 100%;
   background: url("../img/container.svg");
   background-repeat: no-repeat;
+}
+
+.welcome-page__cart {
+  position: absolute;
+  left: 33.98%;
+  right: 55.4%;
+  top: 11.61%;
+  bottom: 73.28%;
 }
 
 .header {
@@ -63,45 +71,6 @@ body {
   top: 532px;
 }
 
-.frame__high {
-  position: absolute;
-  top: 0;
-  left: 659px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 594px;
-  height: 827px;
-  border-radius: 41px;
-  background-color: #FFFFFF;
-  opacity: 0.48;
-  z-index: 2;
-  margin-bottom: -2px;
-}
-
-.frame__low {
-  position: absolute;
-  left: 659px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 594px;
-  height: 789px;
-  border-radius: 41px;
-  background-color: #FFFFFF;
-  opacity: 0.73;
-  z-index: 3;
-  margin-bottom: -3px;
-}
-
 .login {
   position: absolute;
   left: 659px;
@@ -119,11 +88,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 594px;
-  height: 743px;
+  height: 824px;
   border-radius: 41px;
-  background-color: #FFFFFF;
-  z-index: 4;
-  margin-bottom: -4px;
+  background: url("../img/card.svg");
 }
 
 .login__name {
@@ -184,27 +151,10 @@ body {
   color: #8B8B8B;
 }
 
-.login-form__container {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 39px;
-}
-
 .login-form__icon {
   height: 25px;
   width: 31px;
+  margin-left: 39px;
 }
 
 .login-form__info {
@@ -222,6 +172,17 @@ body {
   margin-top: 9px;
   border-radius: 27.5px;
   border: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #FFFFFF;
 }
 
@@ -234,15 +195,24 @@ body {
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, color-stop(34.25%, #6ED4FF), color-stop(96.88%, #8FFFA3));
   background: linear-gradient(90deg, #6ED4FF 34.25%, #8FFFA3 96.88%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .login-form__button--twitter {
   margin-bottom: 22px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background: -webkit-gradient(linear, right top, left top, from(#67E4FE), color-stop(52.4%, #35ABD3));
   background: linear-gradient(270deg, #67E4FE 0%, #35ABD3 52.4%);
 }
 
 .login-form__button--facebook {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background: -webkit-gradient(linear, right top, left top, color-stop(11.18%, #3FA3E8), color-stop(63.9%, #277EBB));
   background: linear-gradient(270deg, #3FA3E8 11.18%, #277EBB 63.9%);
 }
